@@ -30,24 +30,53 @@ Navegador web.
 - Guía de asignatura.
 - Tutoriales en Youtube https://youtu.be/xKQM3FM-Byk
 ## 7. Procedimiento.
-# Paso 1. Iniciar sesión en Google:
-Primero se inicio la cuenta de Docker en google.
+# Iniciar sesión en Google:
+Primero paso se inicio la cuenta de Docker en google.
 # Evidencia:
-<imag!![in2 1](https://github.com/user-attachments/assets/a7d03692-5f10-4ea7-a255-c0fa4ac1c128)
-<imag![in2 2](https://github.com/user-attachments/assets/8b22c324-7977-48fb-802f-c3e5aaf74759)
+<imag!![in2 1](https://github.com/user-attachments/assets/7497fdfe-a88a-433b-86ee-fbcd9ed8f2ea)
+<imag!![in2 1 1](https://github.com/user-attachments/assets/9c70aef1-ccf5-4112-a149-b6348be1e1ad)
 
-# Paso 2: Crear el primer contenedor:
-Segundo, se creó un contenedor Nginx con el nombre nginx1 utilizando el siguiente comando:
+# Crear el primer contenedor:
+Segundo paso se creó un contenedor Nginx con el nombre nginx1 utilizando el siguiente comando:
 ```
 docker run --name nginx1 -d -p 8089:80 nginx
 ```
 # Evidencia:
-<imag![in2 3](https://github.com/user-attachments/assets/3cce2760-dd5f-43d1-aa9e-15d7d8719621)
+<imag!![in2 2](https://github.com/user-attachments/assets/7d5e1161-02bf-4f47-88c2-4290144b53e9)
 
-# Paso 3: Verificación del contenedor en ejecución:
-Tercero para asegurarse de que el contenedor se ejecuta correctamente, se utiliza el siguiente comando:
+# Verificación del contenedor en ejecución:
+Tercer paso para asegurarse de que el contenedor se ejecuta correctamente, se utiliza el siguiente comando:
 ```
 docker ps
 ```
 # Evidencia:
-<imag
+<imag!![inf2 3](https://github.com/user-attachments/assets/701793f2-5eb7-417a-a855-5d13148f2023)
+
+# Copiar archivo index.html desde el contenedor al sistema anfitrión:
+Cuarto paso se copió el archivo index.html desde el contenedor nginx1 al sistema anfitrión para editarlo:
+```
+docker cp nginx1:/usr/share/nginx/html/index.html ./index1.html
+```
+# Evidencia:
+<imag!
+# Editar el archivo index1.html:
+Quinto paso el  archivo index.html se edita para agregar información del instituto o cualquier otro contenido deseado. Para editarlo, se puede usar un editor como nano o vi:
+```
+nano index1.html
+```
+```
+vi index1.html
+```
+# Evidencia:
+<imag!
+# Copiar el archivo editado nuevamente al contenedor:
+Sexto paso una vez editado, se vuelve a copiar el archivo actualizado al contenedor nginx1 con el siguiente comando:
+```
+docker cp index1.html nginx1:/usr/share/nginx/html/index.html
+```
+# Evidencia:
+<imag!
+# Verificación de los cambios:
+Séptimo paso al acceder nuevamente a http://localhost:8089 en el navegador, se debería ver la versión modificada de la página Nginx.
+# Evidencia:
+<imag!
