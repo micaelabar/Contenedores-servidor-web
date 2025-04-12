@@ -49,8 +49,12 @@ Tercer paso para asegurarse de que el contenedor se ejecuta correctamente, se ut
 ```
 docker ps
 ```
+Tambien se abre en una nueva ventana el puerto 8089.
+
 # Evidencia:
 <imag!![inf2 3](https://github.com/user-attachments/assets/701793f2-5eb7-417a-a855-5d13148f2023)
+<imag!![inf2 3 3](https://github.com/user-attachments/assets/f61e8fd6-5767-404d-89d4-7960ac6cb15a)
+
 
 # Copiar archivo index.html desde el contenedor al sistema anfitrión:
 Cuarto paso se copió el archivo index.html desde el contenedor nginx1 al sistema anfitrión para editarlo:
