@@ -125,5 +125,25 @@ Para verificar que el segundo contenedor está funcionando, puedes acceder a la 
 # Evidencia:
 <imag!![acceso](https://github.com/user-attachments/assets/64d2e622-a65f-40b1-98d8-5ce05e3749a3)
 
+## 8. Resultados esperados:
+Al acceder a la dirección IP proporcionada por el entorno de Play with Docker mediante los puertos 8089 y 8090, se muestra la página de bienvenida predeterminada de Nginx, lo cual indica que el servidor web Nginx fue instalado correctamente y se encuentra en funcionamiento.
+# Evidencia:
+<imag!![re 1](https://github.com/user-attachments/assets/c0be5187-e757-48ff-9a5f-970a3a5749d1)
+<imag!![re2](https://github.com/user-attachments/assets/0e707004-2482-4f00-bdad-4b11ca3533f2)
+## 9. Bibliografía:
+- Docker Docs. (2025). Documentación oficial de Docker. Docker Inc.
+Disponible en: https://docs.docker.com
+- Red Hat. (2023). Linux Commands Cheat Sheet. Red Hat Developer.
+Disponible en: https://developers.redhat.com/cheat-sheets/linux-commands-cheat-sheet
+- PhoenixNAP. (2023). Linux Commands Cheat Sheet. PhoenixNAP Knowledge Base.
+Disponible en: https://phoenixnap.com/kb/linux-commands-cheat-sheet
+- DevTalles. (2022). Curso Docker - Guía práctica para desarrolladores.
+Disponible en: https://cursos.devtalles.com/courses/docker-guia-practica
+- Fazt Code. (2021). DOCKER De NOVATO a PRO! Curso completo en Español [Video]. YouTube.
+Disponible en: https://www.youtube.com/watch?v=CV_Uf3Dq-EU
+- TechWorld with Nana. (2023). Docker Tutorial for Beginners [Full Course in 3 Hours] [Video]. YouTube.
+Disponible en: https://www.youtube.com/watch?v=3c-iBn73dDE
+
+
 
 
