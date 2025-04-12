@@ -54,7 +54,7 @@ Tambien se abre en una nueva ventana el puerto 8089.
 # Evidencia:
 <imag!![inf2 3](https://github.com/user-attachments/assets/701793f2-5eb7-417a-a855-5d13148f2023)
 <imag!![inf2 3 3](https://github.com/user-attachments/assets/f61e8fd6-5767-404d-89d4-7960ac6cb15a)
-
+<imag!![inf2 3 2](https://github.com/user-attachments/assets/b91472f2-0152-4fee-ad81-696aecdb5b83)
 
 # Copiar archivo index.html desde el contenedor al sistema anfitrión:
 Cuarto paso se copió el archivo index.html desde el contenedor nginx1 al sistema anfitrión para editarlo:
@@ -62,7 +62,8 @@ Cuarto paso se copió el archivo index.html desde el contenedor nginx1 al sistem
 docker cp nginx1:/usr/share/nginx/html/index.html ./index1.html
 ```
 # Evidencia:
-<imag!
+<imag!![inf2 4](https://github.com/user-attachments/assets/8f62c49d-5f1a-4c9b-a27b-c7648b504b77)
+
 # Editar el archivo index1.html:
 Quinto paso el  archivo index.html se edita para agregar información del instituto o cualquier otro contenido deseado. Para editarlo, se puede usar un editor como nano o vi:
 ```
@@ -72,15 +73,10 @@ nano index1.html
 vi index1.html
 ```
 # Evidencia:
-<imag!
-# Copiar el archivo editado nuevamente al contenedor:
-Sexto paso una vez editado, se vuelve a copiar el archivo actualizado al contenedor nginx1 con el siguiente comando:
-```
-docker cp index1.html nginx1:/usr/share/nginx/html/index.html
-```
-# Evidencia:
-<imag!
+<imag!![inf2 5](https://github.com/user-attachments/assets/873061a3-26b1-4cf4-9da8-4f4e2ad4b344)
+
 # Verificación de los cambios:
 Séptimo paso al acceder nuevamente a http://localhost:8089 en el navegador, se debería ver la versión modificada de la página Nginx.
 # Evidencia:
-<imag!
+<imag!![inf2 7](https://github.com/user-attachments/assets/344d2390-8cce-4229-9e0f-111af873dcbc)
+
