@@ -33,7 +33,8 @@ Navegador web.
 # Iniciar sesión en Google:
 Primero paso se inicio la cuenta de Docker en google.
 # Evidencia:
-<imag!![in2 1](https://github.com/user-attachments/assets/7497fdfe-a88a-433b-86ee-fbcd9ed8f2ea)
+<imag!![2](https://github.com/user-attachments/assets/4b12fc0b-8655-4ef2-a074-836dacc955f9)
+
 <imag!![in2 1 1](https://github.com/user-attachments/assets/9c70aef1-ccf5-4112-a149-b6348be1e1ad)
 
 # Crear el primer contenedor:
@@ -53,7 +54,9 @@ Tambien se abre en una nueva ventana el puerto 8089.
 
 # Evidencia:
 <imag!![inf2 3](https://github.com/user-attachments/assets/701793f2-5eb7-417a-a855-5d13148f2023)
+
 <imag!![inf2 3 3](https://github.com/user-attachments/assets/f61e8fd6-5767-404d-89d4-7960ac6cb15a)
+
 <imag!![inf2 3 2](https://github.com/user-attachments/assets/b91472f2-0152-4fee-ad81-696aecdb5b83)
 
 # Copiar archivo index.html desde el contenedor al sistema anfitrión:
@@ -78,5 +81,6 @@ vi index1.html
 # Verificación de los cambios:
 Séptimo paso al acceder nuevamente a http://localhost:8089 en el navegador, se debería ver la versión modificada de la página Nginx.
 # Evidencia:
-<imag!![inf2 7](https://github.com/user-attachments/assets/344d2390-8cce-4229-9e0f-111af873dcbc)
+<imag!![2 2 7](https://github.com/user-attachments/assets/343161c6-43e9-4c50-a326-2fbea544b95e)
+
 
