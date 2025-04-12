@@ -31,36 +31,23 @@ Navegador web.
 - Tutoriales en Youtube https://youtu.be/xKQM3FM-Byk
 ## 7. Procedimiento.
 # Paso 1. Iniciar sesión en Google:
+Primero se inicio la cuenta de Docker en google.
+# Evidencia:
 <imag!![in2 1](https://github.com/user-attachments/assets/a7d03692-5f10-4ea7-a255-c0fa4ac1c128)
-<imag!![in2 2](https://github.com/user-attachments/assets/8b22c324-7977-48fb-802f-c3e5aaf74759)
+<imag![in2 2](https://github.com/user-attachments/assets/8b22c324-7977-48fb-802f-c3e5aaf74759)
 
-# Paso 2: Crear el primer contenedor Nginx (nginx1) en el puerto 8089:
-El sengundo paso consiste en crear un contenedor llamado nginx1 utilizando la imagen oficial de Nginx de Docker. Este contenedor se expone en el puerto 8089 en el sistema anfitrión y en el puerto 80 dentro del contenedor.
-Comando utilizado:
+# Paso 2: Crear el primer contenedor:
+Segundo, se creó un contenedor Nginx con el nombre nginx1 utilizando el siguiente comando:
 ```
 docker run --name nginx1 -d -p 8089:80 nginx
 ```
 # Evidencia:
-<imag!![in2 3](https://github.com/user-attachments/assets/3cce2760-dd5f-43d1-aa9e-15d7d8719621)
+<imag![in2 3](https://github.com/user-attachments/assets/3cce2760-dd5f-43d1-aa9e-15d7d8719621)
 
-# Paso 3: Crear el segundo contenedor Nginx llamado nginx2:
-Este comando hace lo mismo pero con el contenedor nginx2, exponiendo el puerto 8090.
+# Paso 3: Verificación del contenedor en ejecución:
+Tercero para asegurarse de que el contenedor se ejecuta correctamente, se utiliza el siguiente comando:
 ```
-docker run -d --name nginx2 -p 8090:80 nginx
-```
-# Evidencia:
-<imag!
-# Paso 4: Copiar el archivo index.html desde el contenedor nginx1 al sistema anfitrión:
-Esto copia el archivo index.html desde el contenedor nginx1 a tu directorio actual en el sistema anfitrión.
-```
-docker cp nginx1:/usr/share/nginx/html/index.html ./index1.html
+docker ps
 ```
 # Evidencia:
-<imag!
-# Paso 5: Editar el archivo index1.html:
-Ahora puedes editar el archivo index1.html utilizando un editor vi:
-```
-vi index1.html
-```
-# Evidencia:
-<imag!
+<imag
