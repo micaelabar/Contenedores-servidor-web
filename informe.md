@@ -30,7 +30,7 @@ Navegador web.
 - Guía de asignatura.
 - Tutoriales en Youtube https://youtu.be/xKQM3FM-Byk
 ## 7. Procedimiento.
-# 7.1 Iniciar sesión en Google:
+# Iniciar sesión en Google:
 Primero paso se inicio la cuenta de Docker en google.
 # Evidencia:
 <imag!![2](https://github.com/user-attachments/assets/4b12fc0b-8655-4ef2-a074-836dacc955f9)
@@ -82,7 +82,7 @@ vi index1.html
 Séptimo paso al acceder nuevamente a http://localhost:8089 en el navegador, se debería ver la versión modificada de la página Nginx.
 # Evidencia:
 <imag!![2 2 7](https://github.com/user-attachments/assets/343161c6-43e9-4c50-a326-2fbea544b95e)
-## 7.2.Creación del segundo contenedor Nginx:
+## Creación del segundo contenedor Nginx:
 Primer paso se repite el mismo proceso que con el primer contenedor, pero ahora para un contenedor llamado nginx2 y mapeando el puerto 8090:
 ```
 docker run --name nginx2 -d -p 8090:80 nginx
