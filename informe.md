@@ -30,7 +30,7 @@ Navegador web.
 - Guía de asignatura.
 - Tutoriales en Youtube https://youtu.be/xKQM3FM-Byk
 ## 7. Procedimiento.
-# Iniciar sesión en Google:
+# 7.1 Iniciar sesión en Google:
 Primero paso se inicio la cuenta de Docker en google.
 # Evidencia:
 <imag!![2](https://github.com/user-attachments/assets/4b12fc0b-8655-4ef2-a074-836dacc955f9)
@@ -82,5 +82,48 @@ vi index1.html
 Séptimo paso al acceder nuevamente a http://localhost:8089 en el navegador, se debería ver la versión modificada de la página Nginx.
 # Evidencia:
 <imag!![2 2 7](https://github.com/user-attachments/assets/343161c6-43e9-4c50-a326-2fbea544b95e)
+## 7.2.Creación del segundo contenedor Nginx:
+Primer paso se repite el mismo proceso que con el primer contenedor, pero ahora para un contenedor llamado nginx2 y mapeando el puerto 8090:
+```
+docker run --name nginx2 -d -p 8090:80 nginx
+```
+# Evidencia:
+<imag!![7 2](https://github.com/user-attachments/assets/e7b0bbe7-9c4a-44d0-9e32-9fb0adaf850b)
+
+## Verificación del contenedor en ejecución:
+Segundo paso se utiliza el comando docker ps nuevamente para verificar que el contenedor nginx2 se está ejecutando correctamente.
+```
+docker ps
+```
+Tambien se abre en una nueva ventana el puerto 8089.
+# Evidencia:
+<imag!![7 2 2](https://github.com/user-attachments/assets/71994306-8de3-4b2a-915e-addde137d205)
+
+<imag!![7 2 3](https://github.com/user-attachments/assets/2eebec62-b4f0-4a47-ad88-02fd718a5410)
+
+# Copiar archivo index.html desde el contenedor al sistema anfitrión:
+Cuarto paso se copió el archivo index.html desde el contenedor nginx1 al sistema anfitrión para editarlo:
+```
+docker cp nginx2:/usr/share/nginx/html/index.html ./index.html
+```
+# Evidencia:
+<imag!![copiar](https://github.com/user-attachments/assets/e8a39e21-93ad-459e-bb92-f5b3f7711480)
+
+# Editar el archivo index1.html:
+Quinto paso el  archivo index.html se edita para agregar información del instituto o cualquier otro contenido deseado. Para editarlo, se puede usar un editor como nano o vi:
+```
+nano index1.html
+```
+```
+vi index1.html
+```
+# Evidencia:
+<imag!![editar](https://github.com/user-attachments/assets/ee78f6ff-b52e-462d-b185-0b65f0e9db42)
+
+## Acceso al contenedor nginx2 en el navegador:
+Para verificar que el segundo contenedor está funcionando, puedes acceder a la dirección http://localhost:8090. La página predeterminada de Nginx debería aparecer.
+# Evidencia:
+<imag!![acceso](https://github.com/user-attachments/assets/64d2e622-a65f-40b1-98d8-5ce05e3749a3)
+
 
 
